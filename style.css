@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /* Typography */
+
+  /* Body Copy */
+
+  --Font-size: 16px;
+  /* Font */
+
+  --Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display);
+  --Weights: 500, 700, 900;
+}
+body {
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./images/pattern-background-desktop.svg),
+    linear-gradient(hsl(225, 100%, 94%), hsl(225, 100%, 94%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.container {
+  background-color: #fff;
+  width: 25vw;
+  height: 80vh;
+  border-radius: 20px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container_content {
+  height: 60vh;
+  font-weight: 700;
+  font-size: 1 rem;
+}
+
+.order {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.order h3 {
+  margin-top: 30px;
+}
+.change {
+  color: var(--Desaturated-blue);
+}
+.order p {
+  text-align: center;
+  color: var(--Desaturated-blue);
+}
+.plan {
+  width: 90%;
+  margin: 10px auto;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+}
+.annual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 15px 20px;
+}
+.annual h3 {
+  font-size: 0.8em;
+}
+.annual H5 {
+  color: var(--Desaturated-blue);
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plan-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  padding: 1rem 1.2rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--Bright-blue);
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  box-shadow: 0 4px 54px var(--Pale-blue);
+}
+.cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
